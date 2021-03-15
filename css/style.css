@@ -105,8 +105,8 @@ a:focus {
   text-decoration: none;
 }
 .button.contact:hover {
-text-decoration: underline;
+text-transform: underline;
 }
 .button:focus {
-  text-decoration: underline;
+  text-transform: underline;
 }

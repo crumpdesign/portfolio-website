@@ -87,7 +87,7 @@ a:focus {
 }
 
 .button:active {
-  background-color: #F9FEAB
+  background-color: #F9FEAB;
   text-decoration: none;
 }.button:focus {
   opacity: 0.8;
@@ -101,7 +101,7 @@ a:focus {
   border: 2px solid #ff7f50;
 }
 .button.conact:active {
-  background-color: #F9FEAB
+  background-color: #F9FEAB;
   text-decoration: none;
 }
 .button.contact:hover {

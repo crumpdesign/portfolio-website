@@ -102,9 +102,9 @@ a:focus {
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #49bc7b;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #49bc7b;
 }
 .button.conact:active {
   background-color: #F9FEAB;
@@ -170,4 +170,36 @@ header {
 }
 main {
   padding-top: 133px;
+}
+/* footer section style */
+footer {
+  background-color: #efe9e4
+  text-align: center
+  padding: 0 10px
+}
+.social {
+  display: inline-block;
+    padding: 0 15px;
+}
+/* about me skills */
+.uxskills {
+  boarder-color #49bc7b;
+  border: 2px solid #49bc7b;
+  padding: 10px;
+  text-align: left;
+  width: 300px;
+}
+.graphicskills {
+  boarder-color #49bc7b;
+  border: 2px solid #49bc7b;
+  padding: 10px;
+  text-align: left;
+  width: 300px;
+}
+.productionskills {
+  boarder-color #49bc7b;
+  border: 2px solid #49bc7b;
+  padding: 10px;
+  text-align: left;
+  width: 300px;
 }

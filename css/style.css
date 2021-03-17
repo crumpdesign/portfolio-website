@@ -52,19 +52,21 @@ img {
 /* hyperlink action setup */
 }
 a {
-  color: #50C2FF;
+  color: #142245;
   text-decoration: none; /* No underlining */
 }
 a:hover {
   color: #9ADCFF;
+  opacity 0.8; /* doesn't work */
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
-  color: #50C2FF;
+  color: #142245;
 }
 a:active { /* selected link */
   color: #F9FEAB;
-}a:hover,
+}
+
 a:focus {
   color: #9ADCFF;
   text-decoration: underline;
@@ -89,9 +91,13 @@ a:focus {
 .button:active {
   background-color: #F9FEAB;
   text-decoration: none;
-}.button:focus {
+}
+.button:focus {
   opacity: 0.8;
   text-decoration: none;
+}
+.button:visited {
+  color: #ffffff
 }
 
 .button.contact {
@@ -109,4 +115,41 @@ text-transform: underline;
 }
 .button:focus {
   text-transform: underline;
+}
+
+/* layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  marin: 25px 0;
+}
+#projects .row {
+  padding-bottom: 25px; boarder-bottom: 1px solid #4a4a4a;
+}
+#hero h1 {
+  text-align: center;
+}
+/* working on header */
+.logo {
+  max-width: 250px;
+}
+header {
+  background-color: #efe9e4;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
 }

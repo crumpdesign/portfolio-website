@@ -57,7 +57,7 @@ a {
 }
 a:hover {
   color: #9ADCFF;
-  opacity 0.8; /* doesn't work */
+  opacity: 0.8; /* doesn't work */
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
@@ -122,10 +122,11 @@ text-transform: underline;
   padding: 0 15px;
 }
 .row {
-  marin: 25px 0;
+  margin: 25px 0;
 }
 #projects .row {
-  padding-bottom: 25px; boarder-bottom: 1px solid #4a4a4a;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 #hero h1 {
   text-align: center;
@@ -138,6 +139,10 @@ header {
   background-color: #efe9e4;
   text-align: center;
   padding: 10px 0;
+}
+#nav {
+  width: 100%;
+  z-index: 1;
 }
 
 nav > ul {
@@ -155,7 +160,7 @@ nav > ul > li > a {
 }
 /* hero section */
 #hero {
-  background-color: #142245
+  background-color: #142245;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -165,7 +170,7 @@ nav > ul > li > a {
   padding: 0.67em 0;
 }
 header {
-  box-shadow:         0px 11px 13px 0px rgba(50, 50, 50, 0.45);
+  box-shadow: 0px 11px 13px 0px rgba(50, 50, 50, 0.45);
   position: fixed
 }
 main {
@@ -173,33 +178,32 @@ main {
 }
 /* footer section style */
 footer {
-  background-color: #efe9e4
-  text-align: center
-  padding: 0 10px
+  background-color: #efe9e4;
+  text-align: center;
+  padding: 0 10px;
 }
 .social {
   display: inline-block;
     padding: 0 15px;
 }
+
+.social img {
+  width: 50px;
+}
 /* about me skills */
-.uxskills {
-  boarder-color #49bc7b;
+.skills {
+  border-color: #49bc7b;
   border: 2px solid #49bc7b;
   padding: 10px;
   text-align: left;
   width: 300px;
 }
-.graphicskills {
-  boarder-color #49bc7b;
-  border: 2px solid #49bc7b;
-  padding: 10px;
-  text-align: left;
-  width: 300px;
+.graphic {
+
 }
-.productionskills {
-  boarder-color #49bc7b;
-  border: 2px solid #49bc7b;
-  padding: 10px;
-  text-align: left;
-  width: 300px;
+.production {
+
+}
+.ux {
+
 }

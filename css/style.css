@@ -13,15 +13,19 @@ font-family: 'Poppins', sans-serif;
 body {
   background-color: #142245;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.75em;
@@ -39,6 +43,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.35em;
@@ -48,43 +53,57 @@ h4 {
 /*viewport image setup*/
 img {
   width: 100%;
-
-/* hyperlink action setup */
+  /* hyperlink action setup */
 }
+
 a {
   color: #142245;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:hover {
   color: #9ADCFF;
-  opacity: 0.8; /* doesn't work */
-  text-decoration: underline; /* Underlining when hovering over a link */
+  opacity: 0.8;
+  /* doesn't work */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #142245;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #F9FEAB;
 }
 
 a:focus {
   color: #9ADCFF;
   text-decoration: underline;
-} /* keyboard Accessibility*/
+}
 
+/* keyboard Accessibility*/
 /* Button Styles */
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #49bc7b;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #49bc7b; /* width of the border, type, color */
+  border-bottom: 2px solid #49bc7b;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-  .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -92,10 +111,12 @@ a:focus {
   background-color: #F9FEAB;
   text-decoration: none;
 }
+
 .button:focus {
   opacity: 0.8;
   text-decoration: none;
 }
+
 .button:visited {
   color: #ffffff
 }
@@ -106,13 +127,16 @@ a:focus {
   text-transform: uppercase;
   border: 2px solid #49bc7b;
 }
+
 .button.conact:active {
   background-color: #F9FEAB;
   text-decoration: none;
 }
+
 .button.contact:hover {
-text-transform: underline;
+  text-transform: underline;
 }
+
 .button:focus {
   text-transform: underline;
 }
@@ -121,43 +145,52 @@ text-transform: underline;
 .container {
   padding: 0 15px;
 }
+
 .row {
   margin: 25px 0;
 }
+
 #projects .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
+
 #hero h1 {
   text-align: center;
 }
+
 /* working on header */
 .logo {
   max-width: 250px;
 }
+
 header {
   background-color: #efe9e4;
   text-align: center;
   padding: 10px 0;
 }
+
 #nav {
   width: 100%;
   z-index: 1;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
+
 /* hero section */
 #hero {
   background-color: #142245;
@@ -165,45 +198,60 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
 }
+
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
 }
+
 header {
   box-shadow: 0px 11px 13px 0px rgba(50, 50, 50, 0.45);
   position: fixed
 }
+
 main {
   padding-top: 133px;
 }
+
 /* footer section style */
 footer {
-  background-color: #efe9e4;
+  background-color: #49bc7b;
   text-align: center;
-  padding: 0 10px;
+  padding: 10px 10px;
+  color: #ffffff;
 }
+
+footer>a {
+  background-color: transparent;
+  color: #49bc7b;
+  text-transform: uppercase;
+  border: 2px solid #49bc7b;
+}
+
+.hire {
+  color: #142245;
+}
+
 .social {
   display: inline-block;
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .social img {
   width: 50px;
 }
+
 /* about me skills */
 .skills {
   border-color: #49bc7b;
   border: 2px solid #49bc7b;
   padding: 10px;
   text-align: left;
-  width: 300px;
+  display: inline-block;
 }
-.graphic {
 
-}
-.production {
+.graphic {}
 
-}
-.ux {
+.production {}
 
-}
+.ux {}

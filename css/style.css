@@ -91,14 +91,18 @@ a:focus {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #49bc7b;
-  color: #ffffff;
+  color: #142245;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #49bc7b;
+  border-color: #142245;
+  border: 2px solid #142245;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  margin-bottom: 20px;
 }
 
 .button:hover {
@@ -118,7 +122,7 @@ a:focus {
 }
 
 .button:visited {
-  color: #ffffff
+  color: #142245
 }
 
 .button.contact {
@@ -137,13 +141,10 @@ a:focus {
   text-transform: underline;
 }
 
-.button:focus {
-  text-transform: underline;
-}
-
 /* layout styling */
 .container {
-  padding: 0 15px;
+  padding: 15px;
+  margin: 10px;
 }
 
 .row {
@@ -206,7 +207,7 @@ nav>ul>li>a {
 
 header {
   box-shadow: 0px 11px 13px 0px rgba(50, 50, 50, 0.45);
-  position: fixed
+  position: relative;
 }
 
 main {
@@ -239,6 +240,10 @@ footer>a {
 
 .social img {
   width: 50px;
+}
+
+.phoneemail {
+  display: inline-block;
 }
 
 /* about me skills */
@@ -290,6 +295,68 @@ footer>a {
     display: table;
     padding: 10px 10px;
   }
+
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
 }
 
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+    padding: 20px 20px;
+  }
+}
+
+@keyframes sun color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}

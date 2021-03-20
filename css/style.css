@@ -282,7 +282,7 @@ footer>a {
   }
 
   .col-md-6 {
-    width: 50%;
+    width: 48%;
   }
 
   [class*="col-"] {
@@ -293,12 +293,11 @@ footer>a {
     content: "";
     clear: both;
     display: table;
-    padding: 10px 10px;
+    padding: 0 10px;
   }
 
   .col-right {
-    padding: 15px;
-    margin: 10px;
+    padding: 10px;
   }
 }
 

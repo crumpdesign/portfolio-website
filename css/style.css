@@ -195,7 +195,6 @@ nav>ul>li>a {
 /* hero section */
 #hero {
   background-color: #142245;
-  padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
@@ -211,7 +210,7 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 10px;
 }
 
 /* footer section style */
@@ -227,6 +226,22 @@ footer>a {
   color: #142245;
   text-transform: uppercase;
   border: 2px solid #142245;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -85%);
+  padding: 20px;
+  background-color: rgba(73, 188, 123, 0.8);
+  margin: -20px;
+}
+
+.imgtext {
+  margin-bottom: 50px;
+}
 }
 
 .hire {
@@ -246,13 +261,18 @@ footer>a {
   display: inline-block;
 }
 
+#about {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
 /* about me skills */
 .skills {
   border-color: #49bc7b;
   border: 2px solid #49bc7b;
-  padding: 10px;
+  margin: 10px;
   text-align: left;
-  display: inline-block;
+  display: block;
 }
 
 .graphic {}
@@ -261,10 +281,37 @@ footer>a {
 
 .ux {}
 
+[class*="col-"] {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 0 10px;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+.imgspace {
+  padding: 10px;
+}
+
+.articlespace {
+  padding: 10px;
+}
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .imgtext {
+    margin-bottom: 0px;
   }
 
   nav {
@@ -282,84 +329,115 @@ footer>a {
   }
 
   .col-md-6 {
-    width: 48%;
+    width: 50%;
   }
 
-  [class*="col-"] {
-    float: left;
+  .col-md-3 {
+    width: 25%;
   }
 
-  .row:after {
-    content: "";
-    clear: both;
-    display: table;
-    padding: 0 10px;
+  .col-md-9 {
+    width: 75%;
   }
 
+  /*
   .col-right {
     padding: 10px;
-  }
-
-  .cold-md-6.skills {
+  } */
+  .col-md-6.skills {
     display: inline-block;
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 600px) {
+  .imgtext h1 {
+    font-size: 21px;
   }
 
-  p {
-    font-size: 20px;
+  .imgtext p {
+    font-size: 14px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .col-lg-7 {
+      width: 60%;
+    }
+
+    .col-lg-5 {
+      width: 40%;
+    }
+
+    .col-lg-4 {
+      width: 33.3%;
+    }
+
+    .col-lg-3 {
+      width: 25%;
+    }
+
+    .col-lg-9 {
+      width: 75%;
+    }
+
+    .col-lg-6 {
+      width: 50%;
+    }
+
+    .imgtext {
+      margin-bottom: 0px;
+    }
   }
 
   .row:after {
-    content: "";
-    clear: both;
-    display: table;
     padding: 20px 20px;
   }
-}
 
-@keyframes sun color-change {
-  0% {
-    fill: #edc655;
+  @keyframes sun-color-change {
+    0% {
+      fill: #edc655;
+    }
+
+    50% {
+      fill: #fcffad;
+    }
+
+    100% {
+      fill: #f76414;
+    }
   }
 
-  50% {
-    fill: #fcffad;
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
-  100% {
-    fill: #f76414;
-  }
-}
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
 
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
+    to {
+      transform: translate(200px, 50px);
+    }
   }
 
-  to {
-    transform: translate(200px, 50px);
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}

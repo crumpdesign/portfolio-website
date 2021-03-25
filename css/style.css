@@ -151,6 +151,10 @@ a:focus {
   margin: 25px 0;
 }
 
+.logo {
+  max-width: 150px
+}
+
 #projects .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
@@ -167,7 +171,6 @@ a:focus {
 
 header {
   background-color: #efe9e4;
-  text-align: center;
   padding: 10px 0;
 }
 
@@ -179,10 +182,6 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -303,6 +302,40 @@ footer>a {
   padding: 10px;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -345,6 +378,18 @@ footer>a {
   } */
   .col-md-6.skills {
     display: inline-block;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  nav>ul {
+    margin: 1em 0;
   }
 }
 
@@ -395,6 +440,10 @@ footer>a {
     .imgtext {
       margin-bottom: 0px;
     }
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .row:after {

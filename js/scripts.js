@@ -1,7 +1,8 @@
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
-  x.classname += 'responsive';
-} else {
-  x.className= 'navtoggle';
-}
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
 }

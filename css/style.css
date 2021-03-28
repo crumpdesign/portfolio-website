@@ -315,7 +315,6 @@ navtoggle li .icon {
 
 nav {
   display: inline-block;
-  width: 100%;
 }
 
 .navtoggle.responsive li {
@@ -336,7 +335,7 @@ nav {
   padding: 0 0 10px;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1439px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -384,10 +383,6 @@ nav {
     display: inline-block;
   }
 
-  .hamburger {
-    display: inline-block;
-  }
-
   nav>ul {
     margin: 1em 0;
   }
@@ -398,6 +393,10 @@ nav {
 
   .imgtext p {
     font-size: 14px;
+  }
+
+  .menu-item {
+    display: none;
   }
 }
 
@@ -442,6 +441,16 @@ nav {
 
   .hamburger {
     display: none;
+  }
+
+  .navigation>li {
+    display: inline-block;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
   }
 }
 

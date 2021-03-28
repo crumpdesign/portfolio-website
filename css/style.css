@@ -349,6 +349,7 @@ nav {
     width: auto;
     float: right;
     margin-top: 4px;
+    z-index: 1000;
   }
 
   p {
@@ -402,7 +403,7 @@ nav {
 
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -437,13 +438,14 @@ nav {
 
   .imgtext {
     margin-bottom: 0px;
+    margin-right: -100px;
   }
 
   .hamburger {
     display: none;
   }
 
-  .navigation>li {
+  .menu-item {
     display: inline-block;
   }
 

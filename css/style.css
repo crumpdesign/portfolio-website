@@ -439,10 +439,10 @@ nav {
   .imgtext {
     margin-bottom: 0px;
   }
-}
 
-.hamburger {
-  display: none;
+  .hamburger {
+    display: none;
+  }
 }
 
 .row:after {

@@ -170,7 +170,7 @@ a:focus {
 }
 
 header {
-  background-color: #efe9e4;
+  background-color: #49bc7b;
   padding: 10px 0;
 }
 
@@ -335,7 +335,7 @@ nav {
   padding: 0 0 10px;
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 640px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -396,7 +396,99 @@ nav {
     font-size: 14px;
   }
 
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #142245;
+    background-color: #49bc7b;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
+
   .menu-item {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .imgtext {
+    margin-bottom: 0px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    z-index: 1000;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /*
+  .col-right {
+    padding: 10px;
+  } */
+  .col-md-6.skills {
+    display: inline-block;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  .imgtext h1 {
+    font-size: 30px;
+  }
+
+  .imgtext p {
+    font-size: 16px;
+  }
+
+  .hamburger {
     display: none;
   }
 }
@@ -439,10 +531,6 @@ nav {
   .imgtext {
     margin-bottom: 0px;
     margin-right: -100px;
-  }
-
-  .hamburger {
-    display: none;
   }
 
   .menu-item {

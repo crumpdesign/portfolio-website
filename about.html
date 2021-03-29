@@ -37,23 +37,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--webfont-->
+  <script src="https://kit.fontawesome.com/5f9e870792.js" crossorigin="anonymous"></script>
+
 </head>
-
-
 
 <body>
   <header id="nav">
     <div class="container">
-      <img src="https://via.placeholder.com/150x50?text=Adam-Crump-Design" alt="Adam Crump Design Logo" class="logo">
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img src="https://via.placeholder.com/150x50?text=Adam-Crump-Design" alt="Adam Crump Design Logo" class="logo">
+        <nav>
+          <ul class="navigation">
+            <li class="menu-item"><a href="index.html">Work</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="#contact">Contact</a></li>
+            <li class="hamburger"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-
   </header>
   <!-- Header -->
 
@@ -197,6 +200,13 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <script>
+    $('a').click(function(e) {
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 1000);
+    });
+  </script>
 </body>
 
 </html>

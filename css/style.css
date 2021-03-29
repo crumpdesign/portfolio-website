@@ -151,10 +151,6 @@ a:focus {
   margin: 25px 0;
 }
 
-.logo {
-  max-width: 150px
-}
-
 #projects .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
@@ -170,7 +166,12 @@ a:focus {
 }
 
 header {
+<<<<<<< HEAD
   background-color: #49bc7b;
+=======
+  background-color: #efe9e4;
+  text-align: center;
+>>>>>>> parent of a8c64a9 (Adding a Hamburger Menu to Index using Javascript)
   padding: 10px 0;
 }
 
@@ -182,6 +183,10 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -302,6 +307,7 @@ footer>a {
   padding: 10px;
 }
 
+<<<<<<< HEAD
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -336,6 +342,9 @@ nav {
 }
 
 @media only screen and (max-width: 640px) {
+=======
+@media only screen and (min-width: 640px) {
+>>>>>>> parent of a8c64a9 (Adding a Hamburger Menu to Index using Javascript)
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -379,6 +388,7 @@ nav {
   .col-md-6.skills {
     display: inline-block;
   }
+<<<<<<< HEAD
 
   nav>ul>li {
     display: inline-block;
@@ -387,6 +397,9 @@ nav {
   nav>ul {
     margin: 1em 0;
   }
+=======
+}
+>>>>>>> parent of a8c64a9 (Adding a Hamburger Menu to Index using Javascript)
 
   .imgtext h1 {
     font-size: 21px;
@@ -488,6 +501,7 @@ nav {
     font-size: 16px;
   }
 
+<<<<<<< HEAD
   .hamburger {
     display: none;
   }
@@ -522,6 +536,10 @@ nav {
 
   .col-lg-9 {
     width: 75%;
+=======
+  .row:after {
+    padding: 20px 20px;
+>>>>>>> parent of a8c64a9 (Adding a Hamburger Menu to Index using Javascript)
   }
 
   .col-lg-6 {

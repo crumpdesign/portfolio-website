@@ -174,11 +174,11 @@ header {
   padding: 10px 0;
 }
 
-/*#nav {
+#nav {
   width: 100%;
   z-index: 1;
 }
-*/
+
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -302,19 +302,69 @@ footer>a {
   padding: 10px;
 }
 
-.navtoggle, .navtoggle.responsive {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+.imgtext {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#hero span {
+  display: block;
+}
+
+.imgtext h1 {
+  font-size: 21px;
+}
+
+.imgtext p {
+  font-size: 14px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li>a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
-navtoggle li .icon {
+.navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
-}
-
-.navtoggle.responsive li {
-  display: block;
 }
 
 .navtoggle.responsive nav {
@@ -329,98 +379,6 @@ navtoggle li .icon {
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
-}
-
-@media only screen and (max-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  .imgtext {
-    margin-bottom: 0px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-    z-index: 1000;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  #hero span {
-    display: block;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .col-md-3 {
-    width: 25%;
-  }
-
-  .col-md-9 {
-    width: 75%;
-  }
-
-  /*
-  .col-right {
-    padding: 10px;
-  } */
-  .col-md-6.skills {
-    display: inline-block;
-  }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  nav>ul {
-    margin: 1em 0;
-  }
-
-  .imgtext h1 {
-    font-size: 21px;
-  }
-
-  .imgtext p {
-    font-size: 14px;
-  }
-
-  .navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
-  }
-
-  .navtoggle.responsive nav {
-    padding: 24px 0 0;
-  }
-
-  .navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
-    border-top: 1px solid #142245;
-    background-color: #49bc7b;
-  }
-
-  .navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
-
-  .navtoggle, .navtoggle.responsive {
-    position: relative;
-  }
 }
 
 @media only screen and (min-width: 641px) {

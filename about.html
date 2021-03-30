@@ -43,16 +43,20 @@
 </head>
 
 <body>
-  <header id="nav">
+  <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <img src="https://via.placeholder.com/150x50?text=Adam-Crump-Design" alt="Adam Crump Design Logo" class="logo">
         <nav>
-          <ul class="navigation">
-            <li class="menu-item"><a href="index.html">Work</a></li>
-            <li class="menu-item"><a href="about.html">About</a></li>
-            <li class="menu-item"><a href="#contact">Contact</a></li>
-            <li class="hamburger"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="files/adam-crump-resume-ux.pdf">Resume</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -198,7 +202,9 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+
+  </script>
   <script src="js/scripts.js"></script>
   <script>
     $('a').click(function(e) {

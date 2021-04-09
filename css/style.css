@@ -138,7 +138,7 @@ a:focus {
 }
 
 .button.contact:hover {
-  text-transform: underline;
+  text-decoration: underline;
 }
 
 /* layout styling */
@@ -153,6 +153,11 @@ a:focus {
 
 .logo {
   max-width: 150px
+}
+
+.mainname {
+  padding: 100px 20px;
+  text-align: center;
 }
 
 #projects .row {
@@ -415,6 +420,10 @@ nav>ul>li>a {
   height: 100%;
 }
 
+.comingsoon {
+  background: gray;
+}
+
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
@@ -540,11 +549,6 @@ nav>ul>li>a {
     width: 100%;
   }
 
-  .imgtext {
-    margin-bottom: 0px;
-    margin-right: -100px;
-  }
-
   .menu-item {
     display: inline-block;
   }
@@ -558,44 +562,4 @@ nav>ul>li>a {
 
 .row:after {
   padding: 20px 20px;
-}
-
-@keyframes sun-color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }

@@ -10,6 +10,10 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 /* font rules setup */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #142245;
   font-family: 'Poppins', sans-serif;
@@ -390,14 +394,10 @@ nav>ul>li>a {
   font-size: 20px;
 }
 
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgba(20, 34, 69, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -422,6 +422,7 @@ nav>ul>li>a {
 
 .comingsoon {
   background: gray;
+  pointer-events: none;
 }
 
 @media only screen and (min-width: 641px) {
@@ -508,58 +509,62 @@ nav>ul>li>a {
   .navtoggle li:last-child {
     display: none;
   }
-}
 
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+  .navtoggle.responsive li {
+    padding: 0px 0;
+    border-top: 0px solid rgba(20, 34, 69, 0.5);
   }
 
-  p {
-    font-size: 20px;
+  @media only screen and (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .col-lg-7 {
+      width: 60%;
+    }
+
+    .col-lg-5 {
+      width: 40%;
+    }
+
+    .col-lg-4 {
+      width: 33.3%;
+    }
+
+    .col-lg-3 {
+      width: 25%;
+    }
+
+    .col-lg-9 {
+      width: 75%;
+    }
+
+    .col-lg-6 {
+      width: 50%;
+    }
+
+    .col-lg-12 {
+      width: 100%;
+    }
+
+    .menu-item {
+      display: inline-block;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
   }
 
-  .col-lg-7 {
-    width: 60%;
+  .row:after {
+    padding: 20px 20px;
   }
-
-  .col-lg-5 {
-    width: 40%;
-  }
-
-  .col-lg-4 {
-    width: 33.3%;
-  }
-
-  .col-lg-3 {
-    width: 25%;
-  }
-
-  .col-lg-9 {
-    width: 75%;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-  }
-
-  .col-lg-12 {
-    width: 100%;
-  }
-
-  .menu-item {
-    display: inline-block;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-}
-
-.row:after {
-  padding: 20px 20px;
-}
